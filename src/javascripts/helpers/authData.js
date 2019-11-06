@@ -5,6 +5,7 @@ import 'firebase/auth';
 const boardsDiv = $('#boards');
 const logoutNavbar = $('#navbar-button-logout');
 const authDiv = $('#auth');
+const homeDiv = $('#home');
 
 
 const checkLoginStatus = () => {
@@ -13,10 +14,12 @@ const checkLoginStatus = () => {
       boardsDiv.removeClass('hide');
       logoutNavbar.removeClass('hide');
       authDiv.addClass('hide');
+      homeDiv.addClass('hide');
     } else {
       boardsDiv.addClass('hide');
       logoutNavbar.addClass('hide');
       authDiv.removeClass('hide');
+      homeDiv.removeClass('hide');
     }
   });
 };
