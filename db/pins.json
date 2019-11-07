@@ -4,7 +4,7 @@
     "imageUrl": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/love-quotes-ed-sheeran-1532113351.jpg",
     "siteUrl": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwj4oMSfy9TlAhXtnuAKHcwjD3YQjB16BAgBEAM&url=https%3A%2F%2Fwww.goodhousekeeping.com%2Flife%2Frelationships%2Fg3721%2Fquotes-about-love%2F&psig=AOvVaw3e_eus3T3veN9QVl5BGBb2&ust=1573095411521046",
     "description": "Quotes and more",
-    "boardId": "Love"
+    "boardId": "Love and Inspiration"
   },
   "pin2": {
     "name": "Farmhouse Living",
@@ -18,7 +18,7 @@
     "imageUrl": "https://www.yourtango.com/sites/default/files/styles/body_image_default/public/2018/love-quote-1%20%281%29.jpg",
     "siteUrl": "https://www.yourtango.com/2013182354/love-quotes-inspirational-famous",
     "description": "Quote from the Notebook",
-    "boardId": "Love"
+    "boardId": "Love and Inspiration"
   },
   "pin4": {
     "name": "Farm Kitchen",
@@ -33,5 +33,26 @@
     "siteUrl": "https://homebnc.com/best-farmhouse-bedroom-design-decor-ideas/",
     "description": "Farmhouse bedroom with comforter",
     "boardId": "House Goals"
+  },
+  "pin6": {
+    "name": "DreamRoom",
+    "imageUrl": "https://homebnc.com/homeimg/2017/06/13-farmhouse-bedroom-design-decor-ideas-homebnc.jpg",
+    "siteUrl": "https://homebnc.com/best-farmhouse-bedroom-design-decor-ideas/",
+    "description": "Farmhouse bedroom ",
+    "boardId": "House Goals"
+  },
+  "pin7": {
+    "name": "StrengthenMe",
+    "imageUrl": "https://www.keepinspiring.me/wp-content/uploads/2018/09/22.png",
+    "siteUrl": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwii9Jei5dblAhUyjK0KHV97CoMQjB16BAgBEAM&url=https%3A%2F%2Fwww.keepinspiring.me%2F27-quotes-about-strength-to-persevere%2F&psig=AOvVaw2aKsWmJIj3WMTA3eenIEbn&ust=1573171113020900",
+    "description": "Daily Inspiration",
+    "boardId": "Love and Inspiration"
+  },
+  "pin8": {
+    "name": "Rough Days",
+    "imageUrl": "hhttps://cdn.lifehack.org/wp-content/uploads/2016/03/04030742/quotes-about-strength1.jpg",
+    "siteUrl": "https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwi82IXo5dblAhVBPK0KHcMvCCoQjB16BAgBEAM&url=https%3A%2F%2Fwww.lifehack.org%2F376369%2F100-inspirational-quotes-that-will-give-you-strength-during-hard-times&psig=AOvVaw2aKsWmJIj3WMTA3eenIEbn&ust=1573171113020900",
+    "description": "Hard Days",
+    "boardId": "Love and Inspiration"
   }
 }
