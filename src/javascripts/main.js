@@ -5,6 +5,7 @@ import authData from './helpers/authData';
 import myNavbar from './components/myNavbar/myNavbar';
 import home from './components/home/home';
 import boards from './components/boards/boards';
+import singleBoard from './components/SingleBoard/singleBoard';
 
 import apiKeys from './helpers/apiKeys.json';
 
@@ -18,6 +19,7 @@ const init = () => {
   myNavbar.logoutEvent();
   home.createHome();
   boards.createBoards();
+  singleBoard.makeSingleBoard();
 };
 
 init();
