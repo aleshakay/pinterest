@@ -1,6 +1,7 @@
 import $ from 'jquery';
 import firebase from 'firebase/app';
 import 'firebase/auth';
+import boards from '../components/boards/boards';
 
 const boardsDiv = $('#boards');
 const logoutNavbar = $('#navbar-button-logout');
@@ -15,6 +16,7 @@ const checkLoginStatus = () => {
       logoutNavbar.removeClass('hide');
       authDiv.addClass('hide');
       homeDiv.addClass('hide');
+      boards.createBoards(user.uid);
     } else {
       boardsDiv.addClass('hide');
       logoutNavbar.addClass('hide');

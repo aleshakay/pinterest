@@ -10,7 +10,7 @@ const createBoards = (uid) => {
       domString += '<h1>BOARDS</h1>';
       domString += '<div id="board-container" class="d-flex flex-wrap">';
       boards.forEach((board) => {
-        domString += oneBoard.singleBoard(board);
+        domString += oneBoard.makeSingleBoard(board);
       });
       domString += '</div>';
       utilities.printToDom('boards', domString);
