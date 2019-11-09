@@ -1,3 +1,22 @@
 .boardsPage{
   text-align: center;
 }
+
+.boardsh1{
+  text-align: center;
+}
+
+#board-container{
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  .card{
+    border: 4px double peachpuff;
+    text-align: center;
+  }
+  .toSingleBtn{
+    background-color: peachpuff;
+    border: 2px double gray;
+    color: gray;
+  }
+}

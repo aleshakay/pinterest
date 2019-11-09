@@ -7,7 +7,7 @@ const createBoards = (uid) => {
   boardData.getBoard(uid)
     .then((boards) => {
       let domString = '';
-      domString += '<h1>BOARDS</h1>';
+      domString += '<h1 class="boardsh1">BOARDS</h1>';
       domString += '<div id="board-container" class="d-flex flex-wrap">';
       boards.forEach((board) => {
         domString += oneBoard.makeSingleBoard(board);
