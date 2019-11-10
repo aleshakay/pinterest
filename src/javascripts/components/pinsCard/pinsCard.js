@@ -1,16 +1,16 @@
 import './pinsCard.scss';
 
-const makeboardcard = (pin) => {
+const pinsCardMaker = (pin) => {
   let domString = '';
   domString += `
     <div class="card">
     <div class="card col-md pinCard" id="${pin.id}">
     <div class="card-body">
-    <img src=${pin.imageUrl} class="card-img-top" alt="...">
-    <a href="${pin.siteUrl}" class="pinUrl btn btn-primary">Go somewhere</a>
+    <img src=${pin.imageUrl} class="card-img-top pinImage" alt="...">
+    <p><a href="${pin.siteUrl}" class="pinUrl btn btn-primary">Link to Source</a></p>
     <h5 class="card-title">${pin.name}</h5>
     <p class="card-text">${pin.description}</p>
-    <a href="#" class="pinBtnCard btn btn-primary">Go somewhere</a>
+    <a href="#" id="${pin.id}" class="pinBtnCard btn btn-danger">Delete</a>
     </div>
     </div>
 </div>`;
@@ -18,4 +18,4 @@ const makeboardcard = (pin) => {
   return domString;
 };
 
-export default { makeboardcard };
+export default { pinsCardMaker };

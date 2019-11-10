@@ -8,7 +8,7 @@ const makeboardscard = (board) => {
     <div class="card-body">
     <h5 class="card-title">${board.name}</h5>
     <p class="card-text">${board.description}</p>
-    <a href="#" class="toSingleBtn btn btn-primary">Go somewhere</a>
+    <a href="#" id="${board.id}" class="toSingleBtn btn btn-primary">Go somewhere</a>
     </div>
     </div>
 </div>`;
