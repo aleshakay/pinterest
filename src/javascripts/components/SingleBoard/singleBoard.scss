@@ -1,6 +1,28 @@
-#boards{
-    display: block;
+#singleBoardMakerid{
+  display: flex;
+  justify-content: space-around;
+  color: gray;
+  border: 4px dashed peachpuff;
+  
 }
-.toSingleBtn{
-    background-color: peachpuff;
+.card{
+  border: 4px double peachpuff;
+  text-align: center;
+}
+
+.pinImage{
+  width: 300px !important;
+  height: 300px;
+}
+
+.pinCard{
+  flex-wrap: wrap;
+}
+
+.singleBoardDiv{
+  border: 4px dashed peachpuff;
+}
+
+.pinUrl{
+  background-color: peachpuff !important;
 }

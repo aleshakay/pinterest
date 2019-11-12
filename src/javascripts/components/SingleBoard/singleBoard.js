@@ -1,19 +1,27 @@
+import $ from 'jquery';
 import './singleBoard.scss';
+import p from '../pinsCard/pinsCard';
+import utilities from '../../helpers/utilities';
+import pinsData from '../../helpers/data/pinsData';
 
-const makeSingleBoard = (board) => {
-  let domString = '';
-  domString += `
-    <div class="card">
-    <div class="card col-md boardCard" id="${board.id}">
-    <div class="card-body">
-    <h5 class="card-title">${board.name}</h5>
-    <p class="card-text">${board.description}</p>
-    <a href="#" class="toSingleBtn btn btn-primary">Go somewhere</a>
-    </div>
-    </div>
-</div>`;
+const hideAllBoards = $('#boards');
 
-  return domString;
+const singleBoardMaker = (boardId) => {
+  pinsData.getPins(boardId)
+    .then((pins) => {
+      hideAllBoards.empty();
+      let domString = '<div id="singleBoardDiv">';
+      domString += '<div id="singleBoardMakerid" class="d-flex flex-wrap">';
+      console.log(pins);
+      pins.forEach((pin) => {
+        domString += p.pinsCardMaker(pin);
+      });
+      domString += `<p><a href="#" id="${boardId}" class="pinBtnCard btn btn-primary">All Boards</a></p>`;
+      domString += '</div> </div>';
+      utilities.printToDom('pins', domString);
+    })
+    .catch((error) => console.error(error));
 };
 
-export default { makeSingleBoard };
+
+export default { singleBoardMaker };
