@@ -1,9 +1,11 @@
 import $ from 'jquery';
 import './boards.scss';
+import firebase from 'firebase';
 import utilities from '../../helpers/utilities';
 import boardData from '../../helpers/data/boardData';
 import multiBoard from '../boardcard/boardcard';
 import singleBoardWithPins from '../singleBoard/singleBoard';
+import deletePin from '../DeletePins/deletePins';
 
 const createBoards = (uid) => {
   boardData.getBoard(uid)
@@ -19,18 +21,21 @@ const createBoards = (uid) => {
       // eslint-disable-next-line no-use-before-define
       $('#boards').on('click', '.toSingleBtn', showOneBoard);
       // eslint-disable-next-line no-use-before-define
-      $('#pins').on('click', '.pinBtnCard', showAllBoards);
+      $('#pins').on('click', '.pinBtnCard', deletePin.deleteFromBoard);
+      // eslint-disable-next-line no-use-before-define
+      $('#pins').on('click', '.anotherclass', showAllBoards);
     });
 };
+
+
 const showOneBoard = (e) => {
   const boardId = e.target.id;
-  console.log(e);
   singleBoardWithPins.singleBoardMaker(boardId);
 };
 
-const showAllBoards = (uid) => {
+const showAllBoards = () => {
+  const { uid } = firebase.auth().currentUser;
   createBoards(uid);
-  console.log('help');
 };
 
-export default { createBoards };
+export default { createBoards, showAllBoards };

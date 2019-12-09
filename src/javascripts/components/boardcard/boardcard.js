@@ -8,7 +8,9 @@ const makeboardscard = (board) => {
     <div class="card-body">
     <h5 class="card-title">${board.name}</h5>
     <p class="card-text">${board.description}</p>
-    <a href="#" id="${board.id}" class="toSingleBtn btn btn-primary">Go somewhere</a>
+    <a href="#" id="${board.id}" class="toNewBtn btn btn-primary">New Pins</a>
+    <a href="#" id="${board.id}" class="toSingleBtn btn btn-primary">View Pins</a>
+    <a href="#" id="${board.id}" class="toDeleteBoardBtn btn btn-outline-primary">Delete Board</a>
     </div>
     </div>
 </div>`;

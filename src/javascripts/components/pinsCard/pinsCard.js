@@ -10,7 +10,7 @@ const pinsCardMaker = (pin) => {
     <p><a href="${pin.siteUrl}" class="pinUrl btn btn-primary">Link to Source</a></p>
     <h5 class="card-title">${pin.name}</h5>
     <p class="card-text">${pin.description}</p>
-    <a href="#" id="${pin.id}" class="pinBtnCard btn btn-danger">Delete</a>
+    <a href="#" id="${pin.id}" class="pinBtnCard btn btn-danger data-boardId="${pin.boardId}">Delete</a>
     </div>
     </div>
 </div>`;
